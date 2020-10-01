@@ -35,7 +35,7 @@ const Contact = () => {
             <Button variant="link">Home</Button>
           </a>
         </Link>
-        <Link href="/about">
+        <Link href="/about" git add>
           <a>
             <Button variant="link">About</Button>
           </a>
