@@ -12,11 +12,15 @@ const Index = () => {
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-172500369-2"
         ></script>
-        <script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
           window.dataLayer = window.dataLayer || []; function gtag()
           {dataLayer.push(arguments)}
           gtag('js', new Date()); gtag('config', 'UA-172500369-2');
-        </script>
+          `
+          }}
+        />
       </Head>
       <p>
         Welcome to my dev portfolio. Please visit the individual pages for more

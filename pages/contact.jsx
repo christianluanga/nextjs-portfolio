@@ -9,11 +9,15 @@ const Contact = () => {
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-172500369-2"
         ></script>
-        <script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
           window.dataLayer = window.dataLayer || []; function gtag()
           {dataLayer.push(arguments)}
           gtag('js', new Date()); gtag('config', 'UA-172500369-2');
-        </script>
+          `
+          }}
+        />
       </Head>
       <div className={styles.main}>
         <h1 className={styles.title}>Contact details</h1>
