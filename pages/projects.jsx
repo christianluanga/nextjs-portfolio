@@ -2,10 +2,22 @@ import React from "react"
 import styles from "../styles/Pages.module.css"
 import {Button} from "react-bootstrap"
 import Link from "next/link"
+import Head from "next/head"
 
 const Projects = () => {
   return (
     <div className={styles.container}>
+      <Head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-172500369-2"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'UA-172500369-2');
+        </script>
+      </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>My portfolio</h1>
         <p style={{fontSize: "1.2rem", marginTop: "1rem"}}>

@@ -6,6 +6,17 @@ import {Button} from "react-bootstrap"
 const Index = () => {
   return (
     <div className={styles.main}>
+      <Head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-172500369-2"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'UA-172500369-2');
+        </script>
+      </Head>
       <p>
         Welcome to my dev portfolio. Please visit the individual pages for more
         details.
