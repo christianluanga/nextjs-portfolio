@@ -1,5 +1,6 @@
 import React from "react"
-import {Row, Col, Container} from "react-bootstrap"
+import Link from "next/link"
+import {Button} from "react-bootstrap"
 
 const About = () => {
   return (
@@ -180,6 +181,28 @@ const About = () => {
           </li>
         </ol>
       </section>
+      <footer>
+        <div>
+          <Link href="/">
+            <a>
+              <Button variant="link">Home</Button>
+            </a>
+          </Link>
+          <Link href="/projects">
+            <a>
+              <Button variant="link">projects</Button>
+            </a>
+          </Link>
+          <Link href="/contact">
+            <a>
+              <Button variant="link" color="danger">
+                Contact
+              </Button>
+            </a>
+          </Link>
+        </div>
+      </footer>
+
       <style jsx>
         {`
           img {

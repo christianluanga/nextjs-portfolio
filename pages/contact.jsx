@@ -11,6 +11,23 @@ const Contact = () => {
           <li>E-mail: christianluanga@gmail.com</li>
         </ol>
       </div>
+      <footer>
+        <Link href="/">
+          <a>
+            <Button variant="link">Home</Button>
+          </a>
+        </Link>
+        <Link href="/about">
+          <a>
+            <Button variant="link">About</Button>
+          </a>
+        </Link>
+        <Link href="/projects">
+          <a>
+            <Button variant="link">projects</Button>
+          </a>
+        </Link>
+      </footer>
     </div>
   )
 }

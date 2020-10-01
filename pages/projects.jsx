@@ -1,5 +1,6 @@
 import React from "react"
 import styles from "../styles/Pages.module.css"
+import {Button} from "react-bootstrap"
 import Link from "next/link"
 
 const Projects = () => {
@@ -7,12 +8,8 @@ const Projects = () => {
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>My portfolio</h1>
-        <p style={{fontSize: "1.2rem"}}>
-          I have selected and included on this page some of my highlight work. A
-          <br />
-          full list of my work can be found on my GitHub repo using the link{" "}
-          <br />
-          provided on the footer of this page.
+        <p style={{fontSize: "1.2rem", marginTop: "1rem"}}>
+          Highlight Projects
         </p>
         <div className={styles.grid}>
           <Link href="https://appleitunesearch.herokuapp.com/itunes/search/">
@@ -43,22 +40,26 @@ const Projects = () => {
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://github.com/christianluanga"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{marginRight: "20px", marginLeft: "20px"}}
-        >
-          checkout my github repo
-        </a>
-        <a
-          href="https://github.com/christianluanga"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          checkout my linkedIn profile
-        </a>
+      <footer>
+        <div>
+          <Link href="/">
+            <a>
+              <Button variant="link">Home</Button>
+            </a>
+          </Link>
+          <Link href="/about">
+            <a>
+              <Button variant="link">About</Button>
+            </a>
+          </Link>
+          <Link href="/contact">
+            <a>
+              <Button variant="link" color="danger">
+                Contact
+              </Button>
+            </a>
+          </Link>
+        </div>
       </footer>
     </div>
   )
