@@ -2,6 +2,7 @@ import React from "react"
 import Link from "next/link"
 import styles from "../styles/Pages.module.css"
 import {Button} from "react-bootstrap"
+import Head from "next/head"
 
 const Index = () => {
   return (

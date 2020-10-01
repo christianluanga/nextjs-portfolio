@@ -1,6 +1,7 @@
 import React from "react"
 import Link from "next/link"
 import {Button} from "react-bootstrap"
+import Head from "next/head"
 
 const About = () => {
   return (

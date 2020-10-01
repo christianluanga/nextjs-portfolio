@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "../styles/Pages.module.css"
-
+import Head from "next/head"
 const Contact = () => {
   return (
     <div className={styles.container}>
